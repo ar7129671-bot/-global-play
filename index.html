@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GLOBAL PLAY</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#0b1020;
+ color:white;
+ font-family:Arial,sans-serif;
+}
+header{
+ padding:22px;
+ background:#151d35;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+}
+.logo{font-size:25px;font-weight:bold;color:#48e5ff}
+nav a{color:white;text-decoration:none;margin-left:12px}
+.hero{
+ text-align:center;
+ padding:65px 15px;
+ background:linear-gradient(135deg,#182b60,#30165c);
+}
+.hero h1{font-size:38px}
+.hero p{color:#cbd5e1}
+button{
+ background:#00c8ff;
+ border:0;
+ border-radius:8px;
+ padding:12px 20px;
+ font-weight:bold;
+ cursor:pointer;
+}
+.games{padding:25px 16px}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:14px;
+}
+.card{
+ background:#19233d;
+ padding:22px 10px;
+ border-radius:14px;
+ text-align:center;
+}
+.card h3{margin:10px 0}
+.card button{width:100%;padding:10px}
+footer{text-align:center;padding:25px;color:#aab5cc}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="logo">🌍 GLOBAL PLAY</div>
+ <nav><a href="#games">Games</a></nav>
+</header>
+
+<section class="hero">
+ <h1>PLAY TOGETHER!</h1>
+ <p>Meet players from around the world.</p>
+ <button onclick="document.getElementById('games').scrollIntoView()">START PLAYING</button>
+</section>
+
+<section class="games" id="games">
+ <h2>🎮 Choose Your Game</h2>
+ <div class="cards">
+  <div class="card">
+   <h3>🎲 LUDO</h3>
+   <p>Play with friends</p>
+   <button onclick="alert('Ludo coming soon!')">Play</button>
+  </div>
+  <div class="card">
+   <h3>♟️ CHESS</h3>
+   <p>Challenge players</p>
+   <button onclick="alert('Chess coming soon!')">Play</button>
+  </div>
+  <div class="card">
+   <h3>🏎️ RACING</h3>
+   <p>Racing fun</p>
+   <button onclick="alert('Racing coming soon!')">Play</button>
+  </div>
+  <div class="card">
+   <h3>🎯 ARCADE</h3>
+   <p>Play arcade games</p>
+   <button onclick="alert('Arcade coming soon!')">Play</button>
+  </div>
+ </div>
+</section>
+
+<footer>
+ GLOBAL PLAY © 2026
+ <p>Play Fair • Stay Safe • Have Fun</p>
+</footer>
+
+</body>
+</html>
